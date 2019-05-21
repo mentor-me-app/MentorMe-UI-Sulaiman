@@ -163,8 +163,13 @@ p {
   width: 95%;
   margin: 0 auto;
 }
+@media (max-width: 750px) {
+  :root {
+    font-size: 0.5rem;
+  }
+}
 .page-header {
-  min-height: 600px;
+  min-height: 550px;
   background: url('../img/banner.jpg') no-repeat center / cover;
   background-attachment: fixed;
 }
@@ -173,7 +178,7 @@ p {
   opacity: 0.9;
   background-color: #222222;
   height: auto;
-  min-height: 650px;
+  min-height: 550px;
 }
 .page-header .nav-content {
   display: flex;
@@ -204,6 +209,34 @@ p {
 .page-header .nav-content .nav ul li a:hover {
   color: #4f6df5;
 }
+@media (max-width: 750px) {
+  .page-header .nav-content .nav {
+    display: none;
+  }
+}
+@media (max-width: 750px) {
+  .page-header .nav-content a.button {
+    display: none;
+  }
+}
+.page-header .nav-content .icon-bar {
+  display: none;
+}
+@media (max-width: 750px) {
+  .page-header .nav-content .icon-bar {
+    display: block;
+  }
+  .page-header .nav-content .icon-bar .bar {
+    display: block;
+    background: #ffffff;
+    width: 35px;
+    height: 3px;
+    margin: 8px 0;
+  }
+  .page-header .nav-content .icon-bar .bar:first-child {
+    margin: 0;
+  }
+}
 .page-header .hero {
   text-align: center;
   margin-top: 20rem;
@@ -211,9 +244,15 @@ p {
 .page-header .hero h1 {
   margin: 10rem 0;
   font-size: 3rem;
+  line-height: 1.5;
 }
 .page-header .hero .button {
   padding: 1.5rem;
+}
+@media (max-width: 750px) {
+  .page-header .hero {
+    margin-top: 1rem;
+  }
 }
 .button {
   padding: 0.5em 0.5em;
@@ -272,15 +311,33 @@ p {
 .main-section .our-teams header p {
   text-align: center;
 }
+@media (max-width: 750px) {
+  .main-section .our-teams header {
+    width: 90%;
+  }
+}
 .main-section .our-teams .mentors {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .main-section .our-teams .mentors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .main-section .our-teams .mentors .mentor {
   margin: 0 1rem;
   position: relative;
+}
+@media (max-width: 500px) {
+  .main-section .our-teams .mentors .mentor {
+    margin: 4rem 0;
+  }
 }
 .main-section .our-teams .mentors .mentor h3 {
   color: #2B2F3B;
@@ -290,16 +347,22 @@ p {
 .main-section .our-teams .mentors .mentor img {
   max-width: 100%;
 }
+@media (max-width: 500px) {
+  .main-section .our-teams .mentors .mentor img {
+    width: 400px;
+  }
+}
 .main-section .our-teams .mentors .mentor p {
   position: absolute;
   left: 0;
-  bottom: -5px;
+  bottom: 0;
   color: #ffffff;
   text-align: justify;
   background: rgba(0, 0, 0, 0.3);
-  padding: 2rem;
+  padding: 1rem;
   height: 10rem;
   font-size: 1.5rem;
+  overflow: auto;
 }
 .testimonies {
   background: #121c38;
@@ -313,15 +376,33 @@ p {
 .testimonies header h3 {
   margin: 0 0 1rem 0;
 }
+@media (max-width: 500px) {
+  .testimonies header h3 {
+    font-size: 4.2rem;
+  }
+}
 .testimonies header p {
   color: #ffffff;
   margin: 3rem 0;
+}
+@media (max-width: 500px) {
+  .testimonies header p {
+    font-size: 2.2rem;
+  }
 }
 .testimonies .all-testimony {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .testimonies .all-testimony {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
 .testimonies .all-testimony .entrepreneur {
   display: flex;
@@ -335,10 +416,13 @@ p {
   border-radius: 10px;
   overflow: hidden;
 }
+@media (max-width: 500px) {
+  .testimonies .all-testimony .entrepreneur {
+    margin: 2rem 0;
+  }
+}
 .testimonies .all-testimony .entrepreneur img {
   max-width: 100%;
-  width: 800px;
-  height: 300px;
   border-bottom-left-radius: 100%;
   border-top-left-radius: 100%;
 }
@@ -358,9 +442,24 @@ p {
 }
 .main-footer .content {
   display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   padding: 2rem 0;
 }
 .main-footer .content p {
   color: #ffffff;
+}
+@media (max-width: 500px) {
+  .main-footer .content p {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .main-footer .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }

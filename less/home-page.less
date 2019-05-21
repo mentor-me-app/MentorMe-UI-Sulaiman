@@ -1,5 +1,11 @@
+:root {
+  @media @tablet {
+    font-size: .5rem;
+  }
+}
+
 .page-header {
-  min-height: 600px;
+  min-height: 550px;
   background: url('../img/banner.jpg') no-repeat center/cover;
   background-attachment: fixed;
 
@@ -8,7 +14,7 @@
     opacity: .9;
     background-color: #222222;
     height: auto;
-    min-height: 650px;
+    min-height: 550px;
   }
 
   .nav-content {
@@ -41,6 +47,36 @@
           }
         }
       }
+
+      @media @tablet {
+        display: none;
+      }
+    }
+
+    a.button {
+      @media @tablet {
+        display: none;
+      }
+    }
+
+    .icon-bar {
+      display: none;
+
+      @media @tablet {
+        display: block;
+
+        .bar {
+          display: block;
+          background: @white;
+          width: 35px;
+          height: 3px;
+          margin: 8px 0;
+
+          &:first-child {
+            margin: 0;
+          }
+        }
+      }
     }
   }
 
@@ -51,10 +87,15 @@
     h1 {
       margin: 10rem 0;
       font-size: 3rem;
+      line-height: 1.5;
     }
 
     .button {
       padding: 1.5rem;
+    }
+
+    @media @tablet {
+      margin-top: 1rem;
     }
   }
 }
@@ -81,14 +122,26 @@
       p {
         text-align: center;
       }
+
+      @media @tablet {
+        width: 90%;
+      }
     }
 
     .mentors {
       .flex-box(row, space-between, center);
 
+      @media @phone {
+        .flex-box(column, center, center);
+      }
+
       .mentor {
         margin: 0 1rem;
         position: relative;
+
+        @media @phone {
+          margin: 4rem 0;
+        }
 
         h3 {
           color: @black-ish;
@@ -98,18 +151,23 @@
 
         img {
           max-width: 100%;
+
+          @media @phone {
+            width: 400px;
+          }
         }
 
         p {
           position: absolute;
           left: 0;
-          bottom: -5px;
+          bottom: 0;
           color: @white;
           text-align: justify;
           background: rgba(0, 0, 0, .3);
-          padding: 2rem;
+          padding: 1rem;
           height: 10rem;
           font-size: 1.5rem;
+          overflow: auto;
         }
       }
     }
@@ -127,18 +185,35 @@
 
     h3 {
       margin: 0 0 1rem 0;
+
+      @media @phone {
+        font-size: 4.2rem;
+      }
     }
 
     p {
       color: @white;
       margin: 3rem 0;
+
+      @media @phone {
+        font-size: 2.2rem;
+      }
     }
   }
 
   .all-testimony {
     .flex-box(row, space-between, flex-start);
 
+    @media @phone {
+      .flex-box(column, center, center);
+
+    }
+
     .entrepreneur {
+      @media @phone {
+        margin: 2rem 0;
+      }
+
       .flex-box(row, space-between, flex-start);
       margin: 0 3rem;
       height: 300px;
@@ -149,8 +224,8 @@
 
       img {
         max-width: 100%;
-        width: 800px;
-        height: 300px;
+        // width: 800px;
+        // height: 300px;
         border-bottom-left-radius: 100%;
         border-top-left-radius: 100%;
       }
@@ -176,12 +251,19 @@
   background: #252525;
 
   .content {
-    display: flex;
-    justify-content: space-between;
+    .flex-box(row, space-between, center);
     padding: 2rem 0;
 
     p {
       color: @white;
+
+      @media @phone {
+        margin-bottom: 2rem;
+      }
+    }
+
+    @media @phone {
+      .flex-box(column, center, center);
     }
   }
 }
