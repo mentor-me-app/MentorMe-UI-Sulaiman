@@ -1,0 +1,366 @@
+/*
+ * Media queries breakpoints
+ */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #2B2F3B;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #ffffff;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #828282;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+.page-header {
+  min-height: 600px;
+  background: url('../img/banner.jpg') no-repeat center / cover;
+  background-attachment: fixed;
+}
+.page-header .overlay {
+  padding-top: 2rem;
+  opacity: 0.9;
+  background-color: #222222;
+  height: auto;
+  min-height: 650px;
+}
+.page-header .nav-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-header .nav-content .logo img {
+  max-width: 100%;
+  width: 80px;
+  height: 80px;
+}
+.page-header .nav-content .nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-header .nav-content .nav ul li {
+  padding: 2.5rem;
+}
+.page-header .nav-content .nav ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.2s;
+}
+.page-header .nav-content .nav ul li a:hover {
+  color: #4f6df5;
+}
+.page-header .hero {
+  text-align: center;
+  margin-top: 20rem;
+}
+.page-header .hero h1 {
+  margin: 10rem 0;
+  font-size: 3rem;
+}
+.page-header .hero .button {
+  padding: 1.5rem;
+}
+.button {
+  padding: 0.5em 0.5em;
+  font-size: 2rem;
+  line-height: 1.5;
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: #4f6df5;
+  border-color: #60C3FF;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #60C3FF;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.button:focus,
+.button.focus {
+  color: #ffffff;
+  background-color: #1f45f2;
+  border-color: #008be0;
+}
+.button:hover {
+  color: #ffffff;
+  background-color: #1f45f2;
+  border-color: #23acff;
+}
+.button:active,
+.button.active {
+  color: #ffffff;
+  background-color: #1f45f2;
+  background-image: none;
+  border-color: #23acff;
+}
+.button:active:hover,
+.button.active:hover,
+.button:active:focus,
+.button.active:focus,
+.button:active.focus,
+.button.active.focus {
+  color: #ffffff;
+  background-color: #0d33e1;
+  border-color: #008be0;
+}
+.main-section .our-teams {
+  margin-bottom: 50px;
+}
+.main-section .our-teams header {
+  margin: 5rem auto;
+  width: 50%;
+  text-align: center;
+}
+.main-section .our-teams header h2 {
+  color: #2B2F3B;
+  margin: 3rem 0;
+}
+.main-section .our-teams header p {
+  text-align: center;
+}
+.main-section .our-teams .mentors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.main-section .our-teams .mentors .mentor {
+  margin: 0 1rem;
+  position: relative;
+}
+.main-section .our-teams .mentors .mentor h3 {
+  color: #2B2F3B;
+  text-align: center;
+  margin: 0 0 1rem 0;
+}
+.main-section .our-teams .mentors .mentor img {
+  max-width: 100%;
+}
+.main-section .our-teams .mentors .mentor p {
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  color: #ffffff;
+  text-align: justify;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+  height: 10rem;
+  font-size: 1.5rem;
+}
+.testimonies {
+  background: #121c38;
+  color: #ffffff;
+  padding: 5rem 0;
+}
+.testimonies header {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.testimonies header h3 {
+  margin: 0 0 1rem 0;
+}
+.testimonies header p {
+  color: #ffffff;
+  margin: 3rem 0;
+}
+.testimonies .all-testimony {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.testimonies .all-testimony .entrepreneur {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 3rem;
+  height: 300px;
+  background: #E2E8ED;
+  border: 1px solid #f4f4f4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.testimonies .all-testimony .entrepreneur img {
+  max-width: 100%;
+  width: 800px;
+  height: 300px;
+  border-bottom-left-radius: 100%;
+  border-top-left-radius: 100%;
+}
+.testimonies .all-testimony .entrepreneur h5 {
+  color: #2B2F3B;
+  font-size: 3.2rem;
+  margin: 0 0 2rem 0;
+}
+.testimonies .all-testimony .entrepreneur p {
+  color: #2B2F3B;
+}
+.testimonies .all-testimony .entrepreneur .entrepreneur-details {
+  padding: 3rem;
+}
+.main-footer {
+  background: #252525;
+}
+.main-footer .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+.main-footer .content p {
+  color: #ffffff;
+}
