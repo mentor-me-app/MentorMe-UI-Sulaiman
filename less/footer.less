@@ -1,0 +1,20 @@
+.main-footer {
+  background: #252525;
+
+  .content {
+    .flex-box(row, space-between, center);
+    padding: 2rem 0;
+
+    p {
+      color: @white;
+
+      @media @phone {
+        margin-bottom: 2rem;
+      }
+    }
+
+    @media @phone {
+      .flex-box(column, center, center);
+    }
+  }
+}
