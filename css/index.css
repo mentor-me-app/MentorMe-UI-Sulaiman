@@ -277,6 +277,8 @@ p {
 }
 .home {
   background: url('../img/banner.jpg') no-repeat center / cover;
+}
+.page-header {
   background-attachment: fixed;
   position: relative;
 }
@@ -523,8 +525,6 @@ p {
 }
 .services {
   background: url('../img/services_bg.jpg') no-repeat center / cover;
-  background-attachment: fixed;
-  position: relative;
 }
 .services-list {
   padding: 5rem 0;
@@ -562,6 +562,9 @@ p {
   padding: 1rem;
   color: #2B2F3B;
   text-align: justify;
+}
+.about {
+  background: url('../img/about-us.jpg') no-repeat center / cover;
 }
 .main-footer {
   background: #0f1721;
