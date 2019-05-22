@@ -353,41 +353,41 @@ p {
   background-color: #0d33e1;
   border-color: #008be0;
 }
-.main-section .our-teams {
+.main-section .our-mentors {
   margin-bottom: 50px;
 }
-.main-section .our-teams header {
+.main-section .our-mentors header {
   margin: 5rem auto;
   width: 50%;
   text-align: center;
 }
-.main-section .our-teams header h2 {
+.main-section .our-mentors header h2 {
   color: #2B2F3B;
   margin: 3rem 0;
 }
-.main-section .our-teams header p {
+.main-section .our-mentors header p {
   text-align: center;
 }
 @media (max-width: 750px) {
-  .main-section .our-teams header {
+  .main-section .our-mentors header {
     width: 90%;
   }
 }
-.main-section .our-teams .mentors {
+.main-section .our-mentors .mentors {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
-  .main-section .our-teams .mentors {
+  .main-section .our-mentors .mentors {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 }
-.main-section .our-teams .mentors .mentor {
+.main-section .our-mentors .mentors .mentor {
   margin: 0 1rem;
   position: relative;
   overflow: hidden;
@@ -395,24 +395,24 @@ p {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
-  .main-section .our-teams .mentors .mentor {
+  .main-section .our-mentors .mentors .mentor {
     margin: 4rem 0;
   }
 }
-.main-section .our-teams .mentors .mentor h3 {
+.main-section .our-mentors .mentors .mentor h3 {
   color: #2B2F3B;
   text-align: center;
   margin: 1rem 0;
 }
-.main-section .our-teams .mentors .mentor img {
+.main-section .our-mentors .mentors .mentor img {
   max-width: 100%;
 }
 @media (max-width: 500px) {
-  .main-section .our-teams .mentors .mentor img {
+  .main-section .our-mentors .mentors .mentor img {
     width: 400px;
   }
 }
-.main-section .our-teams .mentors .mentor p {
+.main-section .our-mentors .mentors .mentor p {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -565,6 +565,29 @@ p {
 }
 .about {
   background: url('../img/about-us.jpg') no-repeat center / cover;
+}
+.mission {
+  text-align: center;
+  padding: 5rem 0;
+}
+.mission h2 {
+  color: #2B2F3B;
+  margin-bottom: 3rem;
+}
+.mission p {
+  text-align: justify;
+}
+.our-teams {
+  text-align: center;
+  padding: 8rem 0;
+  background: linear-gradient(#5574F7, #60C3FF);
+}
+.our-teams h2 {
+  color: #ccc;
+  margin-bottom: 3rem;
+}
+.our-teams p {
+  color: #ffffff;
 }
 .main-footer {
   background: #0f1721;
