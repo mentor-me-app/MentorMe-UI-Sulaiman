@@ -3,3 +3,46 @@
   background-attachment: fixed;
   position: relative;
 }
+
+.services-list {
+  padding: 5rem 0;
+
+  header {
+    text-align: center;
+    margin: 3rem 0;
+
+    h3 {
+      color: @black-ish;
+    }
+  }
+
+  article {
+    .flex-box(row, space-between, center);
+
+    .service-list-item {
+      width: 48%;
+      border: 1px solid @hash;
+      background: #eee;
+      border-radius: 10px;
+      overflow: hidden;
+
+
+      img {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      h4 {
+        font-size: 3rem;
+        margin: 1rem;
+        color: @black-ish;
+      }
+
+      p {
+        padding: 1rem;
+        color: @black-ish;
+        text-align: justify;
+      }
+    }
+  }
+}

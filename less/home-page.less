@@ -26,7 +26,7 @@
 
     h1 {
       margin: 6rem 0;
-      font-size: 3rem;
+      font-size: 2.5rem;
       line-height: 1.5;
       text-transform: capitalize;
       text-shadow: 0 3px 3px rgba(0, 0, 0, .8);
@@ -118,6 +118,37 @@
 
         border: 1px solid #bbb6b6;
         border-radius: 10px;
+      }
+    }
+  }
+
+  .join {
+    text-align: center;
+    padding: 8rem 0;
+    background: linear-gradient(#5574F7, #60C3FF);
+
+    a {
+      color: @white;
+      font-size: 3rem;
+      text-decoration: none;
+      transition: .3s;
+      text-transform: capitalize;
+
+      &:hover {
+        color: @black-ish;
+        text-shadow: 0 3px 3px rgba(0, 0, 0, .8);
+      }
+
+      & span {
+        width: 50px;
+        height: 50px;
+        background: #222222;
+        text-align: center;
+        padding: 5px;
+        border: 1px solid #bbb6b6;
+        border-radius: 50%;
+        display: inline-block;
+        line-height: 1.2;
       }
     }
   }
