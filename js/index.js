@@ -8,7 +8,6 @@ menuBar.addEventListener('click', evt => {
 });
 
 window.addEventListener('click', function(evt) {
-	evt.preventDefault();
 	if (evt.target !== nav || evt.target !== menuBar || evt.target === closeBtn) {
 		nav.classList.toggle('hidden');
 	}

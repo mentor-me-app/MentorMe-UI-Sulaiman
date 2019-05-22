@@ -4,28 +4,36 @@
   }
 }
 
-.page-header {
-  min-height: 550px;
+.home {
   background: url('../img/banner.jpg') no-repeat center/cover;
   background-attachment: fixed;
   position: relative;
+}
+
+.page-header {
 
   .overlay {
     padding-top: 2rem;
     opacity: .9;
     background-color: #222222;
     height: auto;
-    min-height: 550px;
+    min-height: 500px;
   }
 
   .hero {
     text-align: center;
-    margin-top: 20rem;
+    margin-top: 10rem;
 
     h1 {
-      margin: 10rem 0;
+      margin: 6rem 0;
       font-size: 3rem;
       line-height: 1.5;
+      text-transform: capitalize;
+      text-shadow: 0 3px 3px rgba(0, 0, 0, .8);
+    }
+
+    p {
+      color: @white;
     }
 
     .button {
