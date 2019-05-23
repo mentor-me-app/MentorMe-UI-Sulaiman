@@ -253,6 +253,8 @@ p {
 .nav-content .icon-bar {
   display: none;
   cursor: pointer;
+  padding-right: 10px;
+  margin-top: -25px;
 }
 @media (max-width: 750px) {
   .nav-content .icon-bar {
