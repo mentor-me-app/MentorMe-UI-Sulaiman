@@ -34,10 +34,24 @@
     .flex-box(row, space-between, center);
     flex-wrap: wrap;
 
+    @media @phone {
+      .flex-box(column, center, center);
+    }
+
     .team-member {
       .flex-box(column, flex-start, center);
-      width: 33%;
+      flex-wrap: wrap;
+      width: 290px;
       margin-bottom: 50px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-right: 50px;
+
+      @media @tablet {
+        margin: 20px 0;
+        justify-content: center;
+      }
 
       .img-container {
 
@@ -50,11 +64,26 @@
       }
 
       .team-details {
-        padding-left: 2rem;
+        padding: 2rem;
 
         .name {
           font-size: 2rem;
         }
+
+        .fas,
+        .fab {
+          font-size: 3rem;
+          color: @black-ish;
+          margin: 1rem 1rem .2rem 1rem;
+        }
+
+        .role {
+          margin: 1rem 0;
+        }
+      }
+
+      h5 {
+        color: @black-ish;
       }
     }
   }

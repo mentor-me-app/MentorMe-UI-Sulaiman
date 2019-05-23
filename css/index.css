@@ -224,14 +224,13 @@ p {
   display: block;
 }
 .nav-content .nav .close-menu {
-  color: #ffffff;
   font-size: 30px;
   text-decoration: none;
   position: absolute;
   top: 0;
   right: 0;
   background: #222222;
-  color: #c90c1f;
+  color: #ffffff;
   margin: 20px 20px 20px 0;
   border: 1px solid #ffffff;
   width: 50px;
@@ -531,10 +530,11 @@ p {
 }
 .services-list header {
   text-align: center;
-  margin: 3rem 0;
+  margin: 2rem 0;
 }
 .services-list header h3 {
   color: #2B2F3B;
+  margin-bottom: 10rem;
 }
 .services-list article {
   display: flex;
@@ -559,7 +559,7 @@ p {
   color: #2B2F3B;
 }
 .services-list article .service-list-item p {
-  padding: 1rem;
+  padding: 1rem 0 3rem 0;
   color: #2B2F3B;
   text-align: justify;
 }
@@ -596,13 +596,32 @@ p {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media (max-width: 500px) {
+  .our-teams .teams {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
 .our-teams .teams .team-member {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 33%;
+  flex-wrap: wrap;
+  width: 290px;
   margin-bottom: 50px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-right: 50px;
+}
+@media (max-width: 750px) {
+  .our-teams .teams .team-member {
+    margin: 20px 0;
+    justify-content: center;
+  }
 }
 .our-teams .teams .team-member .img-container img {
   max-width: 100%;
@@ -611,10 +630,22 @@ p {
   object-fit: cover;
 }
 .our-teams .teams .team-member .team-details {
-  padding-left: 2rem;
+  padding: 2rem;
 }
 .our-teams .teams .team-member .team-details .name {
   font-size: 2rem;
+}
+.our-teams .teams .team-member .team-details .fas,
+.our-teams .teams .team-member .team-details .fab {
+  font-size: 3rem;
+  color: #2B2F3B;
+  margin: 1rem 1rem 0.2rem 1rem;
+}
+.our-teams .teams .team-member .team-details .role {
+  margin: 1rem 0;
+}
+.our-teams .teams .team-member h5 {
+  color: #2B2F3B;
 }
 .main-footer {
   background: #0f1721;
