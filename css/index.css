@@ -534,34 +534,57 @@ p {
 }
 .services-list header h3 {
   color: #2B2F3B;
-  margin-bottom: 10rem;
+  margin-bottom: 7rem;
 }
-.services-list article {
+.services-list .service-list-content {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-.services-list article .service-list-item {
+@media (max-width: 500px) {
+  .services-list .service-list-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.services-list .service-list-content .service-list-item {
   width: 48%;
-  border: 1px solid #828282;
-  background: #eee;
+  border: 1px solid #ccc;
   border-radius: 10px;
-  overflow: hidden;
+  padding: 1rem;
+  margin-bottom: 30px;
 }
-.services-list article .service-list-item img {
-  max-width: 100%;
-  width: 100%;
+@media (max-width: 500px) {
+  .services-list .service-list-content .service-list-item {
+    width: 100%;
+  }
 }
-.services-list article .service-list-item h4 {
+.services-list .service-list-content .service-list-item h3 {
+  color: #2B2F3B;
+  text-shadow: 0 1px 1px #2B2F3B;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .services-list .service-list-content .service-list-item h3 {
+    font-size: 2rem;
+  }
+}
+.available-to-help {
+  background: #f5f8fd;
+}
+.available-to-help .available-content header {
+  text-align: center;
+  padding: 5rem 0;
+}
+.available-to-help .available-content header h4 {
+  color: #2B2F3B;
   font-size: 3rem;
-  margin: 1rem;
-  color: #2B2F3B;
-}
-.services-list article .service-list-item p {
-  padding: 1rem 0 3rem 0;
-  color: #2B2F3B;
-  text-align: justify;
+  margin-bottom: 40px;
 }
 .about {
   background: url('../img/about-us.jpg') no-repeat center / cover;
@@ -579,7 +602,7 @@ p {
 }
 .our-teams {
   text-align: center;
-  padding: 8rem 0;
+  padding: 5rem 0;
   background: #f4f4f4;
 }
 .our-teams p {
@@ -587,6 +610,7 @@ p {
 }
 .our-teams h2 {
   color: #2B2F3B;
+  margin-bottom: 3rem;
 }
 .our-teams .teams {
   padding: 5rem 0;
