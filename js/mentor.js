@@ -4,19 +4,19 @@ const mentorData = [
 		name: 'Bill gate',
 		image: './img/mentors/businessman-718261.jpg',
 		content:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque nesciunt, excepturi suscipit ullam incidunt quia? Est quod exercitationem excepturi velit. Earum fugit accusamus omnis corporis deserunt obcaecati voluptatum maiores iure!'
+			'William Henry Gates III is an American business magnate, investor, author, philanthropist, and humanitarian. He is best known as the principal founder of Microsoft Corporation.'
 	},
 	{
 		name: 'Warren Buffet',
 		image: './img/mentors/businessman-corporate-32976.jpg',
 		content:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque nesciunt, excepturi suscipit ullam incidunt quia? Est quod exercitationem excepturi velit. Earum fugit accusamus omnis corporis deserunt obcaecati voluptatum maiores iure!'
+			'Warren Edward Buffett is an American business magnate, investor, speaker and philanthropist who serves as the chairman and CEO of Berkshire Hathaway.'
 	},
 	{
-		name: 'Warren Buffet',
+		name: 'Mark Cuban',
 		image: './img/mentors/businessman-corporate-32976.jpg',
 		content:
-			'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque nesciunt, excepturi suscipit ullam incidunt quia? Est quod exercitationem excepturi velit. Earum fugit accusamus omnis corporis deserunt obcaecati voluptatum maiores iure!'
+			'Mark Cuban is an American businessman and investor. He is the owner of the National Basketball Association"s Dallas Mavericks, co-owner of 2929 Entertainment and chairman of AXS TV. He is also one of the main "shark" investors on the ABC reality television series, Shark Tank.'
 	}
 ];
 
