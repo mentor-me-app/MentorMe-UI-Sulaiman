@@ -1,0 +1,118 @@
+.nav-content {
+  .flex-box(row, space-between, center);
+
+  .logo {
+    img {
+      max-width: 100%;
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  .nav {
+    transition: all 350ms @easing;
+
+    @media @tablet {
+      max-height: 450px;
+    }
+
+    ul {
+      .flex-box(row, space-between, center);
+
+      li {
+        padding: 2.5rem;
+
+        a {
+          font-size: 1.5rem;
+          text-decoration: none;
+          color: @white;
+          transition: 0.2s;
+
+          @media @tablet {
+            font-size: 2.5rem;
+          }
+
+          &:hover {
+            color: @dark-blue;
+          }
+
+          &.active {
+            color: @dark-blue;
+          }
+        }
+      }
+    }
+
+    @media @tablet {
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(0, 0, 0);
+      height: 550px;
+      width: 100%;
+      z-index: 20;
+
+      & ul {
+        padding-top: 4rem;
+        .flex-box(column, center, center);
+      }
+    }
+
+    &.hidden {
+      opacity: 1;
+    }
+
+    .close-menu {
+      color: @white;
+      font-size: 30px;
+      text-decoration: none;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #222222;
+      color: @white;
+      margin: 20px 20px 20px 0;
+      border: 1px solid @white;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 1.5;
+      display: none;
+
+      @media @tablet {
+        display: block;
+      }
+    }
+  }
+
+  a.button {
+    @media @tablet {
+      display: none;
+    }
+  }
+
+  .icon-bar {
+    display: none;
+    cursor: pointer;
+    padding-right: 10px;
+    margin-top: -25px;
+
+    @media @tablet {
+      display: block;
+
+      .bar {
+        display: block;
+        background: @white;
+        width: 35px;
+        height: 3px;
+        margin: 8px 0;
+
+        &:first-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}

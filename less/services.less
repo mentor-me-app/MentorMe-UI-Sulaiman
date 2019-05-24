@@ -1,0 +1,68 @@
+.services {
+  background: url('../img/services_bg.jpg') no-repeat center/cover;
+}
+
+.services-list {
+  padding: 5rem 0;
+
+  header {
+    text-align: center;
+    margin: 2rem 0;
+
+    h3 {
+      color: @black-ish;
+      margin-bottom: 7rem;
+    }
+  }
+
+  .service-list-content {
+    .flex-box(row, space-between, center);
+
+    @media @phone {
+      .flex-box(column, center, center);
+    }
+
+    flex-wrap: wrap;
+
+    .service-list-item {
+      width: 48%;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 30px;
+
+      @media @phone {
+        width: 100%;
+      }
+
+      h3 {
+        color: @black-ish;
+        text-shadow: 0 1px 1px @black-ish;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+
+        @media @phone {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.available-to-help {
+  background: #f5f8fd;
+
+  .available-content {
+
+    header {
+      text-align: center;
+      padding: 5rem 0;
+
+      h4 {
+        color: @black-ish;
+        font-size: 3rem;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

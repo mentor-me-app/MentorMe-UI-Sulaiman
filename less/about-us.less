@@ -1,0 +1,91 @@
+.about {
+  background: url('../img/about-us.jpg') no-repeat center/cover;
+}
+
+.mission {
+  text-align: center;
+  padding: 5rem 0;
+
+  h2 {
+    color: @black-ish;
+    margin-bottom: 3rem;
+  }
+
+  p {
+    text-align: justify;
+  }
+}
+
+.our-teams {
+  text-align: center;
+  padding: 5rem 0;
+  background: #f4f4f4;
+
+  p {
+    color: @black-ish;
+  }
+
+  h2 {
+    color: @black-ish;
+    margin-bottom: 3rem;
+  }
+
+  .teams {
+    padding: 5rem 0;
+    .flex-box(row, space-between, center);
+    flex-wrap: wrap;
+
+    @media @phone {
+      .flex-box(column, center, center);
+    }
+
+    .team-member {
+      .flex-box(column, flex-start, center);
+      flex-wrap: wrap;
+      width: 290px;
+      margin-bottom: 50px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-right: 50px;
+
+      @media @tablet {
+        margin: 20px 0;
+        justify-content: center;
+      }
+
+      .img-container {
+
+        img {
+          max-width: 100%;
+          width: 290px;
+          height: 320px;
+          object-fit: cover;
+        }
+      }
+
+      .team-details {
+        padding: 2rem;
+
+        .name {
+          font-size: 2rem;
+        }
+
+        .fas,
+        .fab {
+          font-size: 3rem;
+          color: @black-ish;
+          margin: 1rem 1rem .2rem 1rem;
+        }
+
+        .role {
+          margin: 1rem 0;
+        }
+      }
+
+      h5 {
+        color: @black-ish;
+      }
+    }
+  }
+}
